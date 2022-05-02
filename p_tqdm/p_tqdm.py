@@ -13,7 +13,7 @@ from typing import Any, Callable, Generator, Iterable, List
 
 from pathos.helpers import cpu_count
 from pathos.multiprocessing import ProcessPool as Pool
-from tqdm.auto import tqdm
+from tqdm.notebook import tqdm
 
 
 def _parallel(ordered: bool, function: Callable, *iterables: Iterable, **kwargs: Any) -> Generator:
